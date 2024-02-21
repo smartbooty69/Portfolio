@@ -1,8 +1,8 @@
 {
-  "id": "biography",
+  "id": "content_index",
   "type": "SharedSlice",
-  "name": "Biography",
-  "description": "Biography",
+  "name": "ContentIndex",
+  "description": "ContentIndex",
   "variations": [
     {
       "id": "default",
@@ -19,34 +19,37 @@
             "placeholder": ""
           }
         },
+        "content_type": {
+          "type": "Select",
+          "config": {
+            "label": "Content Type",
+            "placeholder": "",
+            "options": [
+              "Blog",
+              "Project"
+            ]
+          }
+        },
         "description": {
           "type": "StructuredText",
           "config": {
             "label": "Description",
             "placeholder": "",
             "allowTargetBlank": true,
-            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
-        "button_text": {
+        "view_more_text": {
           "type": "Text",
           "config": {
-            "label": "Button Text",
+            "label": "View More Text",
             "placeholder": ""
           }
         },
-        "button_link": {
-          "type": "Link",
-          "config": {
-            "label": "Button Link",
-            "placeholder": "",
-            "select": null
-          }
-        },
-        "avatar": {
+        "fallback_item_image": {
           "type": "Image",
           "config": {
-            "label": "Avatar",
+            "label": "Fallback Item Image",
             "constraint": {},
             "thumbnails": []
           }

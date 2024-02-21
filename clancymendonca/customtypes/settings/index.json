@@ -68,11 +68,21 @@
           "select": null
         }
       },
-      "linked_link": {
+      "linkedin_link": {
         "type": "Link",
         "config": {
-          "label": "Linked Link",
+          "label": "Linkedin Link",
           "placeholder": "",
+          "allowTargetBlank": false,
+          "select": null
+        }
+      },
+      "instagram_link": {
+        "type": "Link",
+        "config": {
+          "label": "Instagram Link",
+          "placeholder": "",
+          "allowTargetBlank": false,
           "select": null
         }
       }
