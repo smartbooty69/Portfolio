@@ -128,7 +128,7 @@ export default function ContentList({
                                 <Link href={urlPrefix + "/" + item.uid} className="flex flex-col justify-between border-t border-t-slate-100 py-10 text-slate-200 md:flex-row" aria-label={item.data.title}>
                                     <div className="flex flex-col">
                                         <span className="text-3xl font-bold">{item.data.title}</span>
-                                        <div className="flex gap-3 text-green-400 text-lg font-bold">
+                                        <div className="flex gap-3 text-green-400 text-lg font-bold md:flex-wrap">
                                             {item.tags.map((tag, index) => (
                                                 <span key={index}>{tag}</span>
                                             ))}
